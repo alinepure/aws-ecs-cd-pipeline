@@ -1,0 +1,18 @@
+{
+    "Parameters": {
+        "AppName": "MySampleApp",
+        "ContainerImage": "IMAGE_NAME_PLACEHOLDER",
+        "DbConnection": "mysql",
+        "DbDatabase": "my_database",
+        "DbHost": "mysql",
+        "DbPassword": "secret",
+        "DbPort": "3306",
+        "DbUsername": "root",
+        "DesiredCount": "1",
+        "ECSCluster": "<ECS Cluster Name>",
+        "Environment": "Development",
+        "MaxCapacity": "4",
+        "MinCapacity": "2",
+        "TargetGroupArn": "<Target Group Arn>"
+    }
+}
