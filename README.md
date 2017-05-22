@@ -23,11 +23,12 @@ in an ECS cluster.
 
 ### Pipeline Prep
 
-1) Upload the [ECS Service CloudFormation template](service.template) to the
+1) Ensure the ECR Repository is [created.](http://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-create.html)
+2) Upload the [ECS Service CloudFormation template](service.template) to the
 [CloudFormation Source Bucket](#definitions). Note the Parameters starting with
 DB are not actually required and are an example of how you might pass an environment
 variable to your application when using this method.
-2) Create a file named service-options.json with the following content, this will
+3) Create a file named service-options.json with the following content, this will
 be referred to as the options file in the rest of this document. Replace
 __ECS Cluster Name__ with the [ECS Cluster Name](#definitions) and __Target Group Arn__
 with the [target group ARN](#definitions). The __App Name__ should be unique across all of
